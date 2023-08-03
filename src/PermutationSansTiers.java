@@ -12,6 +12,11 @@ public class PermutationSansTiers {
     a = (byte) (a + b);
     b = (byte) (a - b);
     a = (byte) (a - b);
+
+    // Autre solution
+    // a = a ^ b;
+    // b = a ^ b;
+    // a = a ^ b;
     assertEquals(101, a);
     assertEquals(99, b);
   }
